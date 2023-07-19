@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Snake</title>
+
+        <link rel="stylesheet" href="styles.css">
+        <script src="js/Main.js" type="module"></script>
+
+    </head>
+
+    <body>
+
+        <div id="board" class="board">
+            <div class="end">
+                <div id="gameoverLabel" class="title gameover" hidden="true">Game Over</div>
+                <button id="playButton" class="play">PLAY</button>
+                <div id="finalscoreLabel" class="title finalscore" hidden="true">Final Score: 0</div>
+            </div>
+
+            <script>
+
+                var div;
+                var element;
+
+                for (let i = 0; i < 21; i++) {
+
+                    div = document.createElement("div");
+                    div.className = "line";
+                    div.id = "line" + i;
+                    document.getElementById("board").appendChild(div);
+
+                    for (let n = 0; n < 21; n++) {
+                        element = document.createElement("div");
+                        element.className = "square";
+                        element.id = "square" + i + "_" + n;
+                        div.appendChild(element);
+                    }
+
+                }
+
+            </script>
+        </div>
+
+        <div class="controls">
+            <button id="centreControl" class="centre" hidden="true"></button>
+            <button id="upButton" class="up control" hidden="true">▲</button>
+            <button id="leftButton" class="left control" hidden="true">◄</button>
+            <button id="downButton" class="down control" hidden="true">▼</button>
+            <button id="rightButton" class="right control" hidden="true">►</button>
+        </div>
+
+    </body>
+
+</html>

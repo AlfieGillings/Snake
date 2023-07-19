@@ -1,0 +1,148 @@
+body {
+    background-color: gray;
+    margin: 10px;
+    width: 545px;
+    height: 100%;
+}
+
+div {
+    float: left;
+    clear: left;
+}
+
+.title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    margin: 10px;
+}
+
+.controls {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control {
+    width: 80px;
+    height: 80px;
+    border-color: transparent transparent rgba(0, 0, 0, 0.3);
+    border-width: 8px 8px 8px;
+    background-color: lightgray;
+    border-radius: 5px;
+    box-shadow: 0 5px black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    position: absolute;
+}
+
+.control:active {
+    box-shadow: 0 3px black;
+    transform: translateY(2px);
+}
+
+.up {
+    margin-bottom: 160px;
+}
+
+.left {
+    margin-right: 160px;
+}
+
+.down {
+    margin-top: 160px;
+}
+
+.right {
+    margin-left: 160px;
+}
+
+.centre {
+    width: 80px;
+    height: 80px;
+    background-color: darkgray;
+    border-color: transparent transparent rgba(0, 0, 0, 0.3);
+    border-width: 8px 8px 8px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.end {
+    width: 522px;
+    height: 522px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameover {
+    color: crimson;
+    position: absolute;
+    margin-bottom: 150px;
+}
+
+.finalscore {
+    color:darkgoldenrod;
+    font-size: 30px;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    position: absolute;
+    margin-top: 120px;
+}
+
+.play {
+    height: 50px;
+    width: 140px;
+    font-family: fantasy;
+    font-size: 20px;
+    border-radius: 8px;
+    border-color: black;
+    cursor: pointer;
+    box-shadow: 0 5px black;
+    position: absolute;
+}
+
+.play:hover {
+    background-color: darkgray;
+}
+
+.play:active {
+    box-shadow: 0 3px black;
+    transform: translateY(2px);
+}
+
+
+.board {
+    border: 4px solid black;
+    width: 525px;
+    background-color: rgb(20, 20, 20);
+}
+
+.line {
+    float: left;
+    clear: left;
+}
+
+.square {
+    height: 25px;
+    width: 25px;
+    float: left;
+    clear: none;
+    background-color: rgb(20, 20, 20);
+}
+
+.food {
+    height: 19px;
+    width: 19px;
+    border: 3px solid rgb(20, 20, 20);
+    background-color: brown;
+}
+
+.snake {
+    height: 19px;
+    width: 19px;
+    border: 3px solid rgb(20, 20, 20);
+    background-color: greenyellow;
+}
